@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>MVP Predictor</title></head>
+<body>
+  <h1>NBA MVP Predictor</h1>
+  <form method="POST">
+    <label>Enter a year (1996–2024):</label>
+    <input type="number" name="year" required min="1996" max="2024">
+    <button type="submit">Submit</button>
+  </form>
+  {% if error %}
+    <p style="color: red;">{{ error }}</p>
+  {% endif %}
+</body>
+</html>
